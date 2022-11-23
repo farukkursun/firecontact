@@ -19,13 +19,13 @@ import { useEffect, useState } from "react";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDybekg94Z5upwBPbr7nnPXfbZt3n0TyTg",
-  authDomain: "realtime-dc0d1.firebaseapp.com",
-  databaseURL: "https://realtime-dc0d1-default-rtdb.firebaseio.com",
-  projectId: "realtime-dc0d1",
-  storageBucket: "realtime-dc0d1.appspot.com",
-  messagingSenderId: "275867191175",
-  appId: "1:275867191175:web:e967dd5e3eb43d8e64f522",
+  apiKey:process.env.REACT_APP_API_KEY,
+  authDomain:process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL:process.env.REACT_APP_DATABASE_URL,
+  projectId:process.env.REACT_APP_PROJECT_ID,
+  storageBucket:process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId:process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId:process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase

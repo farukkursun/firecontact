@@ -48,7 +48,7 @@ const NevForm = ({
           </Form.Select>
         </FormGroup>
 
-        <Button className="mt-4" variant="primary" type="submit">
+        <Button className="mt-4 btn" variant="primary" type="submit">
           {add}
         </Button>
       </Form>
