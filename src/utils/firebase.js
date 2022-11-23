@@ -13,6 +13,7 @@ import {
   update,
 } from "firebase/database";
 import { useEffect, useState } from "react";
+import Toastify from "./Toastify";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -43,6 +44,7 @@ export const addUser = (username, phoneNumber, gender) => {
     phoneNumber: phoneNumber,
     gender: gender,
   });
+  Toastify('Add User')
 };
 
 //veriyi yazdirma
@@ -74,7 +76,7 @@ export const useFetch = () => {
 export const DeleteUser = (id) => {
   const db = getDatabase(firebase);
   remove(ref(db, "users/" + id));
-  // Toastify('Deleted')
+  Toastify('Deleted User')
 };
 
 
@@ -86,6 +88,6 @@ export const UpdateUser = (id,username,phoneNumber,gender) => {
   const updates = {};
 
   updates["users/" + id] = {id, username, phoneNumber,gender};
-
+  Toastify('Update User')
   return update(ref(db), updates);
 };
