@@ -44,6 +44,6 @@ $ yarn start
 
 ### Demo
 
-#### [View Demo](https://farukmovieapp.netlify.app/)
+#### [View Demo](https://farukfirecontact.netlify.app/)
 
-![Demo](/src/assets/movieapp.gif)
+![Demo](/src/assets/firecontactapp.gif)
