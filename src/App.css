@@ -28,9 +28,10 @@ body{
   margin-top: 8rem;
   margin-bottom: 2rem;
   background-color: white;
-  color: black;
+  color:black;
 
 }
+
 @media screen and (max-width: 1000px) {
   .container {
     flex-direction: column;

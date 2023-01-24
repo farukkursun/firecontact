@@ -34,7 +34,7 @@ const NewTable = ({ showInForm }) => {
                 <td>{item.username}</td>
                 <td>{item.phoneNumber}</td>
                 <td>{item.gender}</td>
-                <td className="text-center" onClick={() => DeleteUser(item.id)}>
+                <td className="text-danger text-center" onClick={() => DeleteUser(item.id)}>
                   
                   <MdDelete />
                 </td>
